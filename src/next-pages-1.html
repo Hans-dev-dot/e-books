@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-body">
+
+<nav class="bg-gray-800 p-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+        <img class="h-8 mr-2" src="img/logo.jpg" alt="logo">
+        <span class="text-white text-lg font-semibold">Free</span>
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex space-x-6 mr-36">
+        <a href="#" class="text-white hover:text-gray-300">Home</a>
+        <a href="about-our.html" class="text-white hover:text-gray-300" >About</a>
+    </div>
+
+    <div class="md:hidden">
+        <button class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+            xmlns="https:www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-lineJoin="round" stroke-Width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+       </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Munu -->
+<div id="mobile-menu" class="md:hidden fixed z-50 left-0 w-64 h-full bg-background shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out ">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white">Home</a>
+        <a href="about-our.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white">About</a>
+        <a href="#footer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white">Footer</a>
+    </div>
+</div>
+
+<section id="home" class="relative">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="text-4xl sm:text-5xl font-bold text-black mb-4">Books Free For All</h1>
+            <p class="text-lg sm:text-xl text-black">Explore the world of literature.</p>
+        </div>
+</section>
+
+
+<section id="books" class="py-20  bg-warna">
+    <h1 class="font-bold text-dark text-3xl mb-6 px-20">Philosophy</h1>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+            <!-- Grid item 1 -->
+            <div class="relative">
+                <img src="img/wisdom-of-life.jpeg" alt="Book 1" class="mx-auto max-w-full h-auto rounded-lg mt-4 mb-4 object-cover">
+                <div class="absolute flex items-center justify-center">
+                    <button class ="xl:translate-x-16  translate-x-16 md:translate-x-1 bg-gray-800 hover:bg-blue-600 text-white py-2 px-4 rounded" onclick="downloadPDF('wisdom-of-life.pdf')">Download PDF</button>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="img/48Laws.jpeg" alt="Book 1" class="mx-auto max-w-full h-auto rounded-lg mt-4 mb-4 object-cover">
+                <div class="absolute flex items-center justify-center">
+                    <button class ="xl:translate-x-16  translate-x-16 md:translate-x-1 bg-gray-800 hover:bg-blue-600 text-white py-2 px-4 rounded" onclick="downloadPDF('48Laws.pdf')">Download PDF</button>
+                </div>
+            </div>
+           
+</section>
+
+<div class="container mt-12 mb-4 flex justify-center space-x-4">
+   <a href="next-pages.html" class="bg-gray-800 hover:bg-blue-600 text-white py-2 px-4 rounded inline-block">Previous Page</a>
+</div>
+
+
+
+<footer id="footer" class="bg-footer text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Logo dan Deskripsi -->
+        <div>
+            <img src="img/logo.jpg" alt="Logo" class="h-12 mb-4">
+            <p class="text-sm">Open free is an open e-books that provide some books that you can read or downloadable</p>
+        </div>
+        
+        <!-- Navigasi -->
+        <div class="col-span-2 sm:col-span-1">
+            <h3 class="text-lg font-bold mb-4">Navigation</h3>
+            <ul>
+                <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="about-website.html" class="text-gray-300 hover:text-white">Philosopy</a></li>
+                <li><a href="about-our.html" class="text-gray-300 hover:text-white">About Our</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Portfolio</a></li>
+            </ul>
+        </div>
+
+        <!-- Informasi -->
+        <div class="col-span-2 sm:col-span-1">
+            <h3 class="text-lg font-bold mb-4">Information</h3>
+            <ul>
+                <li><a href="#" class="text-gray-300 hover:text-white">About The Website</a></li>
+                <li><a href="https://www.globalgreyebooks.com/" class="text-gray-300 hover:text-white">Reference</a></li>
+            </ul>
+        </div>
+
+        <!-- Ikuti Kami -->
+        <div class="col-span-2 sm:col-span-2 md:col-span-1">
+            <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 6c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM7 6c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM12 21h-2v-3c0-1.1-.9-2-2-2s-2 .9-2 2v3H4v-7.48A5.02 5.02 0 0 1 6.52 9h10.96A5.02 5.02 0 0 1 20 13.52V21h-3v-7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v7z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
